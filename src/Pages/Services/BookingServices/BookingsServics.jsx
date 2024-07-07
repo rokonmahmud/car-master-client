@@ -6,7 +6,7 @@ import Swal from "sweetalert2";
 import noService from "../../../assets/icons/noservices.jpg";
 const BookingsServics = () => {
   const { user } = useContext(AuthContext);
-  const url = `http://localhost:5000/bookings?email=${user?.email}`;
+  const url = `https://car-master-server-three.vercel.app/bookings?email=${user?.email}`;
   const [bookings, setBookings] = useState([]);
   useEffect(() => {
     fetch(url)
@@ -31,7 +31,7 @@ const BookingsServics = () => {
           text: "Your file has been deleted.",
           icon: "success",
         });
-        fetch(`http://localhost:5000/bookings/${id}`, {
+        fetch(`https://car-master-server-three.vercel.app/bookings/${id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())
