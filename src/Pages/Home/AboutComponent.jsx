@@ -1,3 +1,7 @@
+
+import img1 from "../../assets/images/about_us/person.jpg"
+import img2 from "../../assets/images/about_us/parts.jpg"
+
 const AboutComponent = () => {
     return (
       <div>
@@ -6,11 +10,11 @@ const AboutComponent = () => {
             <div className="hero-content flex-col lg:flex-row">
               <div className="relative ">
                 <img
-                  src="https://i.ibb.co/sv1RK6r/person.jpg"
+                  src= {img1}
                   className="max-w-sm rounded-lg "
                 />
                 <img
-                  src="https://i.ibb.co/Y0XL4Ty/parts.jpg"
+                  src={img2}
                   className="max-w-sm rounded-lg w-64 h-52 absolute lg:left-56 left-40	border-white border-8	 top-32"
                 />
               </div>

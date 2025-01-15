@@ -26,7 +26,7 @@ const CheckoutForm = () => {
     };
     console.log(booking);
 
-    fetch("https://car-master-server-three.vercel.app/bookings", {
+    fetch("http://localhost:5000/bookings", {
       method: "POST",
       headers: {
         "content-type": "application/json ",

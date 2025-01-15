@@ -48,12 +48,12 @@ const router = createBrowserRouter([
         {
           path: "/services/:id",
           element: <ServiceDetails/>,
-          loader:({params})=> fetch(`https://car-master-server-three.vercel.app/services/${params.id}`)
+          loader:({params})=> fetch(`http://localhost:5000/services/${params.id}`)
         },
         {
           path: "/checkout/:id",
           element: <PrivetRoute><CheckoutForm/></PrivetRoute>,
-          loader:({params})=> fetch(`https://car-master-server-three.vercel.app/checkout/${params.id}`)
+          loader:({params})=> fetch(`http://localhost:5000/checkout/${params.id}`)
         },
         {
           path: "/mybooking",
